@@ -1,5 +1,5 @@
-
-**** 09/29/21 00:48:54 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+**** 09/29/21 04:29:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_SQ_CASE_2_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Inpu
 
@@ -23,7 +23,7 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.TRAN  0 7.5us 0 1ns 
+.TRAN  0 15us 0 1ns 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -35,17 +35,17 @@
 V_V2         N03217 0  
 +PULSE 5V 0V 0 0.25us 0.25us 1us 2.5us
 V_V3         N03309 0  
-+PULSE 5V 0V 0 0.25us 0.25us 1us 2.5us
++PULSE 5V 0V 0 0.50us 0.50us 2us 5us
 V_V1         N03177 0 5Vdc
 M_M1         N03401 N03217 0 0 MbreakN1           
-M_M2         N03297 N03309 N03401 N03401 MbreakN1           
+M_M2         N03297 N03309 N03401 0 MbreakN1           
 M_M3         N03297 N03217 N03177 N03177 MbreakP1           
 M_M4         N03297 N03309 N03177 N03177 MbreakP1           
 
 **** RESUMING G3_LAB2_ELVIS_SQ_CASE_2_SIM.cir ****
 .END
 
-**** 09/29/21 00:48:54 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 09/29/21 04:29:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_SQ_CASE_2_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Inpu
 
@@ -92,7 +92,7 @@ M_M4         N03297 N03309 N03177 N03177 MbreakP1
        XPART    0               0            
 
 
-**** 09/29/21 00:48:54 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 09/29/21 04:29:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_SQ_CASE_2_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Inpu
 
@@ -127,7 +127,7 @@ M_M4         N03297 N03309 N03177 N03177 MbreakP1
 
           JOB CONCLUDED
 
-**** 09/29/21 00:48:54 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 09/29/21 04:29:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_SQ_CASE_2_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Inpu
 
@@ -139,6 +139,6 @@ M_M4         N03297 N03309 N03177 N03177 MbreakP1
 
 
 
-  License check-out time            =        4.03
-  Total job time (using Solver 1)   =         .08
+  License check-out time            =       24.16
+  Total job time (using Solver 1)   =         .14
 

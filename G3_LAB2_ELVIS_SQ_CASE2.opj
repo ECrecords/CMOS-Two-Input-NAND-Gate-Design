@@ -45,22 +45,22 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Outputs")
-      (Select "Design Resources"))
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 650"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 650"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 104 2279 104 793")
-        (Scroll "219 289")
+        (Placement "44 0 1 -1 -1 -8 -31 104 2279 104 793")
+        (Scroll "0 308")
         (Zoom "270")
         (Occurrence "/"))
       (Path
          "C:\USERS\ELVIS\DOCUMENTS\CSUN\2021-2022\FALL-2021\ECE442L\LAB2\CMOS-TWO-INPUT-NAND-GATE-DESIGN\G3_LAB2_ELVIS_SQ_CASE2.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))))
+      (Page "PAGE1")))
+  (MPSSessionName "elvis"))
