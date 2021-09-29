@@ -1,0 +1,10 @@
+* source ECE442L_ELVISCHINO-ISLAS_LAB_2_CASE_2_F_400KHZ_PSPICE_CIRCUIT
+V_V1         N00348 0 5Vdc
+V_V2         N00795 0  
++PULSE 5V 0V 0 0.25us 0.25us 1us 2.5us
+V_V3         N00381 0  
++PULSE 5V 0V 0 0.25us 0.25us 1us 2.5us
+M_M1         N00191 N00795 0 0 MbreakN1           
+M_M2         N00137 N00381 N00191 N00191 MbreakN1           
+M_M3         N00137 N00795 N00348 N00348 MbreakP1           
+M_M4         N00137 N00381 N00348 N00348 MbreakP1           
