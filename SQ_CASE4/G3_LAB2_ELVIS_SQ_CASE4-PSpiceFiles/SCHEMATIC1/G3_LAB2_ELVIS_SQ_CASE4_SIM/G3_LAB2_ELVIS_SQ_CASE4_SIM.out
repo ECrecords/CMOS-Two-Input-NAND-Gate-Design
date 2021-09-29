@@ -1,0 +1,150 @@
+
+**** 09/29/21 05:38:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_SQ_CASE4_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "G3_LAB2_ELVIS_SQ_CASE4_SIM.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../g3_lab2_elvis_sq_case4-pspicefiles/g3_lab2_elvis_sq_case4.lib" 
+* From [PSPICE NETLIST] section of C:\Users\elvis\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 6us 0 1ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source G3_LAB2_ELVIS_SQ_CASE4
+V_V3         N05141 0  
++PULSE 5V 0V 0 0.2us 0.2us 0.8us 2us
+M_M2         N05127 N05141 N05249 0 MbreakN1           
+M_M4         N05127 N05141 N04979 N04979 MbreakP1           
+V_V2         N05031 0  
++PULSE 5V 0V 0 0.1us 0.1us 0.4us 1us
+V_V1         N04979 0 5Vdc
+M_M1         N05249 N05031 0 0 MbreakN1           
+M_M3         N05127 N05031 N04979 N04979 MbreakP1           
+
+**** RESUMING G3_LAB2_ELVIS_SQ_CASE4_SIM.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file g3_lab2_elvis_sq_case4.ind for library file g3_lab2_elvis_sq_case4.lib.
+
+INFO(ORPSIM-15422): Making new index file g3_lab2_elvis_sq_case4.ind for library file g3_lab2_elvis_sq_case4.lib.
+
+Index has 2 entries from 1 file(s).
+
+**** 09/29/21 05:38:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_SQ_CASE4_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakN1        MbreakP1        
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L   10.000000E-06   10.000000E-06 
+           W   30.000000E-06   60.000000E-06 
+         VTO    2              -1.5          
+          KP  111.000000E-06   55.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA     .01             .04         
+          IS   16.640000E-12   16.640000E-12 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+         CBD    2.000000E-12    4.000000E-12 
+         CBS    2.000000E-12    4.000000E-12 
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO  100.000000E-15  200.000000E-15 
+        CGDO  100.000000E-15  200.000000E-15 
+        CGBO    0               0            
+         TOX    1.200000E-06    1.200000E-06 
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 09/29/21 05:38:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_SQ_CASE4_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N04979)    5.0000 (N05031)    5.0000 (N05127) 86.65E-09 (N05141)    5.0000     
+
+(N05249) 43.32E-09 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V2         0.000E+00
+    V_V1        -4.328E-11
+
+    TOTAL POWER DISSIPATION   2.16E-10  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/29/21 05:38:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_SQ_CASE4_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        4.05
+  Total job time (using Solver 1)   =         .34
+

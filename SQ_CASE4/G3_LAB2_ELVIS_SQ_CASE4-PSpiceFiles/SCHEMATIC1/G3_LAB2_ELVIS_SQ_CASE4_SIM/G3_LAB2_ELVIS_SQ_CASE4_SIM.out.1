@@ -1,0 +1,54 @@
+
+**** 09/29/21 05:35:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_SQ_CASE4_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "G3_LAB2_ELVIS_SQ_CASE4_SIM.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\elvis\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 6us 0 1ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source G3_LAB2_ELVIS_SQ_CASE4
+V_V3         N05141 0  
++PULSE 5V 0V 0 0.2us 0.2us 0.8us 2us
+M_M2         N05127 N05141 N05249 0 MbreakN1           
+M_M4         N05127 N05141 N04979 N04979 MbreakP1           
+V_V2         N05031 0  
++PULSE 5V 0V 0 0.1us 0.1us 0.4us 1us
+V_V1         N04979 0 5Vdc
+M_M1         N05249 N05031 0 0 MbreakN1           
+M_M3         N05127 N05031 N04979 N04979 MbreakP1           
+
+**** RESUMING G3_LAB2_ELVIS_SQ_CASE4_SIM.cir ****
+.END
+
+ERROR(ORPSIM-15113): Model MbreakN1 used by M_M2 is undefined
+
+ERROR(ORPSIM-15113): Model MbreakP1 used by M_M4 is undefined
+
+ERROR(ORPSIM-15113): Model MbreakN1 used by M_M1 is undefined
+
+ERROR(ORPSIM-15113): Model MbreakP1 used by M_M3 is undefined
+

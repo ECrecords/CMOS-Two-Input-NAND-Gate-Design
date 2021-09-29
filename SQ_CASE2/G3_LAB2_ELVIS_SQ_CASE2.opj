@@ -46,13 +46,13 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input-NAND-Gate-Design\G3_LAB2_ELVIS_SQ_CASE2\g3_lab2_elvis_sq_case2.dsn")
+         "C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input-NAND-Gate-Design\SQ_CASE2\g3_lab2_elvis_sq_case2.dsn")
       (Path "Design Resources"
-         "C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input-NAND-Gate-Design\G3_LAB2_ELVIS_SQ_CASE2\g3_lab2_elvis_sq_case2.dsn"
+         "C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input-NAND-Gate-Design\SQ_CASE2\g3_lab2_elvis_sq_case2.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
       (Select "Design Resources"
-         "C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input-NAND-Gate-Design\G3_LAB2_ELVIS_SQ_CASE2\g3_lab2_elvis_sq_case2.dsn"
+         "C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input-NAND-Gate-Design\SQ_CASE2\g3_lab2_elvis_sq_case2.dsn"
          "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
@@ -63,12 +63,12 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 2227 52 741")
-        (Scroll "-585 -11")
+        (Placement "44 0 1 -1 -1 -8 -31 52 2227 52 741")
+        (Scroll "-408 0")
         (Zoom "135")
         (Occurrence "/"))
       (Path
-         "C:\USERS\ELVIS\DOCUMENTS\CSUN\2021-2022\FALL-2021\ECE442L\LAB2\CMOS-TWO-INPUT-NAND-GATE-DESIGN\G3_LAB2_ELVIS_SQ_CASE2\G3_LAB2_ELVIS_SQ_CASE2.DSN")
+         "C:\USERS\ELVIS\DOCUMENTS\CSUN\2021-2022\FALL-2021\ECE442L\LAB2\CMOS-TWO-INPUT-NAND-GATE-DESIGN\SQ_CASE2\G3_LAB2_ELVIS_SQ_CASE2.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
   (MPSSessionName "elvis"))
