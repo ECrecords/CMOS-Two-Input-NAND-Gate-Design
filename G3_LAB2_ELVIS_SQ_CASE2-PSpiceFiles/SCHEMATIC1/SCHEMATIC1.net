@@ -1,0 +1,10 @@
+* source G3_LAB2_ELVIS_SQ_CASE2
+V_V2         N03217 0  
++PULSE 5V 0V 0 0.25us 0.25us 1us 2.5us
+V_V3         N03309 0  
++PULSE 5V 0V 0 0.25us 0.25us 1us 2.5us
+V_V1         N03177 0 5Vdc
+M_M1         N03401 N03217 0 0 MbreakN1           
+M_M2         N03297 N03309 N03401 N03401 MbreakN1           
+M_M3         N03297 N03217 N03177 N03177 MbreakP1           
+M_M4         N03297 N03309 N03177 N03177 MbreakP1           

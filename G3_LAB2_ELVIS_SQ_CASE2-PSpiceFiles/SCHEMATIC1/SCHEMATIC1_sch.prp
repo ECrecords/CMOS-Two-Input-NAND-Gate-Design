@@ -1,50 +1,39 @@
 ("FILE_TYPE"	"PMAP File"
     ("devices"
-        ("VDC")
         ("VPULSE")
+        ("VDC")
         ("MbreakN")
         ("MbreakP")
     )
     ("instances"
-        ("V1"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_V1")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"5Vdc")
-                    ("pspice_param"	"DC")
-                )
-            )
-        )
         ("V2"
             ("device_name"	"VPULSE")
             ("pspice_path"	"V_V2")
             ("level"	"0")
             ("model_params"
-                ("TF"
-                    ("value"	"0.25us")
-                    ("pspice_param"	"TF")
-                )
-                ("PER"
-                    ("value"	"2.5us")
-                    ("pspice_param"	"PER")
-                )
-                ("V1"
-                    ("value"	"5V")
-                    ("pspice_param"	"V1")
-                )
-                ("V2"
-                    ("value"	"0V")
-                    ("pspice_param"	"V2")
+                ("PW"
+                    ("value"	"1us")
+                    ("pspice_param"	"PW")
                 )
                 ("TR"
                     ("value"	"0.25us")
                     ("pspice_param"	"TR")
                 )
-                ("PW"
-                    ("value"	"1us")
-                    ("pspice_param"	"PW")
+                ("V2"
+                    ("value"	"0V")
+                    ("pspice_param"	"V2")
+                )
+                ("V1"
+                    ("value"	"5V")
+                    ("pspice_param"	"V1")
+                )
+                ("PER"
+                    ("value"	"2.5us")
+                    ("pspice_param"	"PER")
+                )
+                ("TF"
+                    ("value"	"0.25us")
+                    ("pspice_param"	"TF")
                 )
                 ("TD"
                     ("value"	"")
@@ -65,29 +54,29 @@
             ("pspice_path"	"V_V3")
             ("level"	"0")
             ("model_params"
-                ("TF"
-                    ("value"	"0.25us")
-                    ("pspice_param"	"TF")
-                )
-                ("PER"
-                    ("value"	"2.5us")
-                    ("pspice_param"	"PER")
-                )
-                ("V1"
-                    ("value"	"5V")
-                    ("pspice_param"	"V1")
-                )
-                ("V2"
-                    ("value"	"0V")
-                    ("pspice_param"	"V2")
+                ("PW"
+                    ("value"	"1us")
+                    ("pspice_param"	"PW")
                 )
                 ("TR"
                     ("value"	"0.25us")
                     ("pspice_param"	"TR")
                 )
-                ("PW"
-                    ("value"	"1us")
-                    ("pspice_param"	"PW")
+                ("V2"
+                    ("value"	"0V")
+                    ("pspice_param"	"V2")
+                )
+                ("V1"
+                    ("value"	"5V")
+                    ("pspice_param"	"V1")
+                )
+                ("PER"
+                    ("value"	"2.5us")
+                    ("pspice_param"	"PER")
+                )
+                ("TF"
+                    ("value"	"0.25us")
+                    ("pspice_param"	"TF")
                 )
                 ("TD"
                     ("value"	"")
@@ -99,6 +88,17 @@
                 )
                 ("DC"
                     ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("V1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"5Vdc")
                     ("pspice_param"	"DC")
                 )
             )

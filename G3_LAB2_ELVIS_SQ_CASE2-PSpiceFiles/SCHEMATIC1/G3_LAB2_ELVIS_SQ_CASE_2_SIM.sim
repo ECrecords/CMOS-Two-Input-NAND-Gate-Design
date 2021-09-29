@@ -2,22 +2,22 @@
 
 @Settings: 0 1
 @General:
-ProfileName= "ECE442L_ELVISCHINOISLAS_LAB_2_CASE_2_F_400KHZ_SIM" 
-ProfileFile= "ECE442L_ELVISCHINOISLAS_LAB_2_CASE_2_F_400KHZ_SIM.sim" 
+ProfileName= "G3_LAB2_ELVIS_SQ_CASE_2_SIM" 
+ProfileFile= "G3_LAB2_ELVIS_SQ_CASE_2_SIM.sim" 
 Connectivity= "SCHEMATIC1.net" 
-NetlistFile= "ECE442L_ELVISCHINOISLAS_LAB_2_CASE_2_F_400KHZ_SIM.cir" 
-DataFile= "ECE442L_ELVISCHINOISLAS_LAB_2_CASE_2_F_400KHZ_SIM.dat" 
-OutFile= "ECE442L_ELVISCHINOISLAS_LAB_2_CASE_2_F_400KHZ_SIM.out" 
+NetlistFile= "G3_LAB2_ELVIS_SQ_CASE_2_SIM.cir" 
+DataFile= "G3_LAB2_ELVIS_SQ_CASE_2_SIM.dat" 
+OutFile= "G3_LAB2_ELVIS_SQ_CASE_2_SIM.out" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "1000ns" 
++0 "7.5us" 
 +1 "" 
 +2 "0" 
-+3 "" 
++3 "1ns" 
 +4 "" 
 +5 "" 
 +6 "" 
@@ -124,13 +124,13 @@ SaveFile 0 ""
 @Analysis: 15 0
 @End Analysis
 @Analysis: 16 0
-+0 "-1" 
++0 "0" 
 +1 "0" 
 @End Analysis
 @Analysis: 17 0
 +0 "-1" 
-+1 "" 
-+2 "-1" 
++1 "-1" 
++2 "0" 
 +3 "-1" 
 +4 "1" 
 @End Analysis

@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_SQ_CASE_2_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Input-NAND-Gate-Design\G3_LAB2_ELVIS_SQ_CASE2-PSpiceFiles\SCHEMATIC1\G3_LAB2_ELVIS_SQ_CASE_2_SIM.sim ] 
+
+** Creating circuit file "G3_LAB2_ELVIS_SQ_CASE_2_SIM.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../g3_lab2_elvis_sq_case2-pspicefiles/g3_lab2_elvis_sq_case2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\elvis\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 7.5us 0 1ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
