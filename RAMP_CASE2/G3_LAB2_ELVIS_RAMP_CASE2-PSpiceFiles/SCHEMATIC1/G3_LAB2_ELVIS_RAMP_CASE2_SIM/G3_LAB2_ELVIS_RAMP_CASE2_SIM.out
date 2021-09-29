@@ -1,0 +1,154 @@
+
+**** 09/29/21 06:12:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_RAMP_CASE2_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Inp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "G3_LAB2_ELVIS_RAMP_CASE2_SIM.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../g3_lab2_elvis_ramp_case2-pspicefiles/g3_lab2_elvis_ramp_case2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\elvis\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 30us 0 1ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source G3_LAB2_ELVIS_RAMP_CASE2
+M_M2         N05779 N05793 N05901 N06407 MbreakN1           
+V_V1         N05631 0 5Vdc
+V_V3         N05793 0  
++PULSE 0V 5V 0 10us 0 0 10us
+M_M4         N05779 N05793 N05631 N05631 MbreakP1           
+M_M1         N05901 N05683 0 0 MbreakN1           
+V_V2         N05683 0  
++PULSE 0V 5V 0 5us 0 0 5us
+M_M3         N05779 N05683 N05631 N05631 MbreakP1           
+
+**** RESUMING G3_LAB2_ELVIS_RAMP_CASE2_SIM.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file g3_lab2_elvis_ramp_case2.ind for library file g3_lab2_elvis_ramp_case2.lib.
+
+INFO(ORPSIM-15422): Making new index file g3_lab2_elvis_ramp_case2.ind for library file g3_lab2_elvis_ramp_case2.lib.
+
+Index has 2 entries from 1 file(s).
+
+**** 09/29/21 06:12:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_RAMP_CASE2_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Inp
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakN1        MbreakP1        
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L   10.000000E-06   10.000000E-06 
+           W   30.000000E-06   60.000000E-06 
+         VTO    2              -1.5          
+          KP  111.000000E-06   55.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA     .01             .04         
+          IS   16.640000E-12   16.640000E-12 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+         CBD    2.000000E-12    4.000000E-12 
+         CBS    2.000000E-12    4.000000E-12 
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO  100.000000E-15  200.000000E-15 
+        CGDO  100.000000E-15  200.000000E-15 
+        CGBO    0               0            
+         TOX    1.200000E-06    1.200000E-06 
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V3.
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V2.
+
+**** 09/29/21 06:12:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_RAMP_CASE2_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Inp
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N05631)    5.0000 (N05683)    0.0000 (N05779)    5.0000 (N05793)    0.0000     
+
+(N05901)    2.4901 (N06407)    2.5099 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.913E-11
+    V_V3         0.000E+00
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   9.57E-11  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/29/21 06:12:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-G3_LAB2_ELVIS_RAMP_CASE2_SIM"  [ C:\Users\elvis\Documents\CSUN\2021-2022\Fall-2021\ECE442L\Lab2\CMOS-Two-Inp
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        4.05
+  Total job time (using Solver 1)   =         .55
+

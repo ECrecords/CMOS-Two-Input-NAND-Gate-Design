@@ -1,0 +1,10 @@
+* source G3_LAB2_ELVIS_RAMP_CASE2
+M_M2         N05779 N05793 N05901 N06407 MbreakN1           
+V_V1         N05631 0 5Vdc
+V_V3         N05793 0  
++PULSE 0V 5V 0 10us 0 0 10us
+M_M4         N05779 N05793 N05631 N05631 MbreakP1           
+M_M1         N05901 N05683 0 0 MbreakN1           
+V_V2         N05683 0  
++PULSE 0V 5V 0 5us 0 0 5us
+M_M3         N05779 N05683 N05631 N05631 MbreakP1           
